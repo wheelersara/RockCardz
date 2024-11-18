@@ -1,0 +1,124 @@
+@font-face {
+
+    font-family: RockFont;
+  
+    src: url("Funkrocker.otf");
+  
+}
+  
+  
+  
+h4 {
+  
+    font-family: RockFont;
+  
+}
+  
+  
+.masthead {
+
+    background: rgb(230, 221, 221);
+  
+    height: 5em;
+  
+}
+  
+.centeredText {
+  
+    text-align: center;
+  
+}
+  
+.site-title {
+  
+    color: white;
+  
+    font-family: RockFont;
+  
+    font-size: 80px;
+  
+    font-weight: bolder;
+  
+}
+  
+.container{
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 5px solid lightgray;
+    background-color: aliceblue;
+}
+  
+.card{
+    width: 16%;
+    height: auto;
+    background-color: whitesmoke;
+    margin-top: 25px;
+    margin-left: 5px;
+    font-size: medium;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+.card img{
+    margin-top: 5%;
+    width: 110px;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid purple;
+} 
+  
+.card h2{
+    color: black;
+    text-align: left;
+    font-family: RockFont;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.card p{
+    color: black;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    padding: 5%;
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 95%;
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 1000px){
+    .container{
+        justify-content: center;
+    }
+    .card {
+        width: 23%;
+        margin-left: 5px;
+    }
+
+    .card img{
+        width: 60%;
+    }
+
+}
+@media (min-width: 1000px){
+    .container{
+        justify-content: center;
+    }
+    .card {
+        width: 15%;
+        margin-left: 5px;
+    }
+
+    .card img{
+        width: 60%;
+    }
+
+}
